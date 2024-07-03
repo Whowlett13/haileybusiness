@@ -130,7 +130,7 @@ export const skills = [
 
 export const projects = [
   {
-    img: "../../../img/tasks-manager.webp",
+    img: "../../../img/horseSpirit.jpg",
     title: "Tasks Manager",
     link: "https://www.wyatthowlett.ca",
     description: `Lorem ipsum dolor sit amet`,
@@ -153,7 +153,7 @@ export const projects = [
     ],
   },
   {
-    img: "../../../img/ecommerce-stripe-2.webp",
+    img: "../../../img/horseSpirit.jpg",
     title: "Ecommerce Stripe",
     link: "https://www.wyatthowlett.ca",
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`,
@@ -176,7 +176,7 @@ export const projects = [
     ],
   },
   {
-    img: "../../../img/nexanime.webp",
+    img: "../../../img/horseSpirit.jpg",
     title: "me",
     link: "https://www.wyatthowlett.ca",
     description: `Lorem ipsum dolor sit amet`,
@@ -192,129 +192,5 @@ export const projects = [
       },
     ],
   },
-  {
-    img: "../../../img/store-games.webp",
-    title: "Store games",
-    link: "https://www.wyatthowlett.ca",
-    description: `Lorem ipsum dolor sit amet`,
-    technologies: [
-      {
-        icon: IconKeys.react,
-      },
-      {
-        icon: IconKeys.css,
-      },
-      {
-        icon: IconKeys.javaScript,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
-      {
-        icon: IconKeys.reactQuery,
-      },
-    ],
-  },
-  {
-    img: "../../../img/movie.webp",
-    title: "Movie Tv",
-    link: "https://www.wyatthowlett.ca",
-    description: `Lorem ipsum dolor sit amet`,
-    technologies: [
-      {
-        icon: IconKeys.react,
-      },
-      {
-        icon: IconKeys.css,
-      },
-      {
-        icon: IconKeys.javaScript,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
-    ],
-  },
-  {
-    img: "../../../img/cyberpunk.webp",
-    title: "cyberpunk",
-    link: "https://www.wyatthowlett.ca",
-    description: `Lorem ipsum dolor sit amet`,
-    technologies: [
-      {
-        icon: IconKeys.html,
-      },
-      {
-        icon: IconKeys.css,
-      },
-      {
-        icon: IconKeys.javaScript,
-      },
-    ],
-  },
-
-  {
-    img: "../../../img/fit-nation.webp",
-    title: "gym",
-    link: "https://www.wyatthowlett.ca",
-    description: `Lorem ipsum dolor sit amet`,
-    technologies: [
-      {
-        icon: IconKeys.react,
-      },
-      {
-        icon: IconKeys.css,
-      },
-      {
-        icon: IconKeys.javaScript,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
-    ],
-  },
-  {
-    img: "../../../img/spotify.webp",
-    title: "Spotify-Clone",
-    link: "https://www.wyatthowlett.ca",
-    description: `Lorem ipsum dolor sit amet`,
-    technologies: [
-      {
-        icon: IconKeys.react,
-      },
-      {
-        icon: IconKeys.javaScript,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
-      {
-        icon: IconKeys.redux,
-      },
-      {
-        icon: IconKeys.reactQuery,
-      },
-    ],
-  },
-
-  {
-    img: "../../../img/landing.webp",
-    title: "Landing Realidad Virtual",
-    link: "https://www.wyatthowlett.ca",
-    description: `Lorem ipsum dolor sit amet`,
-    technologies: [
-      {
-        icon: IconKeys.astro,
-      },
-      {
-        icon: IconKeys.css,
-      },
-      {
-        icon: IconKeys.javaScript,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
-    ],
-  },
+  
 ];
