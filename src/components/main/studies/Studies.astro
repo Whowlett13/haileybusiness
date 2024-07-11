@@ -5,7 +5,7 @@ import { studies } from "../../../const/const";
 <section class="section_studies">
   <div class="linear-grandient-1"></div>
   <div class="content_studies">
-    <h3 class="title-studies" id="education">Education</h3>
+    <h3 class="title-studies" id="education">Education:</h3>
     <ul class="ul-studies">
       {
         studies.map(({ date, title, corporation }) => (
@@ -54,6 +54,9 @@ import { studies } from "../../../const/const";
     max-width: 1355px;
   }
   .title-studies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 27px;
     color: #f6f6f9;
     text-align: left;
@@ -65,6 +68,8 @@ import { studies } from "../../../const/const";
   .ul-studies {
     padding: 30px 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .li-studies {

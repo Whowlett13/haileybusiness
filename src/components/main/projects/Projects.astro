@@ -6,7 +6,7 @@ import Project from "./Project.astro";
 <section class="section-projects">
   <div class="linear-grandient-1"></div>
   <div class="container-projects">
-    <h2 class="title-projects" id="projects">Clients</h2>
+    <h2 class="title-projects" id="projects">Clients:</h2>
     <div>
       <ul class="ul-projects">
         {
@@ -50,7 +50,9 @@ import Project from "./Project.astro";
   }
   .title-projects {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;  
+    align-items: center ;
     font-size: 27px;
     padding: 20px 0;
     color: #f6f6f9;
