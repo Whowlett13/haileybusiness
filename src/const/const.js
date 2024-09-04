@@ -14,6 +14,7 @@ export const studies = [
     corporation: "Lorem ipsum dolor sit amet,",
     date: "04/2023 – 04/2023",
   },
+  
 ];
 
 export const IconKeys = {
@@ -38,6 +39,7 @@ export const IconKeys = {
   nodejs: "nodejs",
   mongodb: "mongodb",
   vite: "vite",
+  skills: "skills",
   // here add more icon keys
 };
 
@@ -46,6 +48,11 @@ export const skills = [
     title: "Html",
     icon: IconKeys.html,
   },
+  {
+    title: "Skills",
+  icon: "Lorem ipsum dolor sit amet",
+  },
+  
   {
     title: "Css",
     icon: IconKeys.css,

@@ -6,24 +6,26 @@ import { getIconComponent } from "../../../icons/IconAll.astro";
 <section class="section-skill">
   <div class="linear-grandient-1"></div>
   <div class="container-skill">
-    <h2 class="title-skills" id="skills">Skills:</h2>
-    <ul class="ul-skill">
-      {
-        skills.map(({ icon, title }) => {
-          const IconComponent = getIconComponent(icon);
-          return (
-            <li class="li-skills">
-              {IconComponent && <IconComponent />}
-              <p class="p-skill">{title}</p>
-            </li>
-          );
-        })
-      }
+    <h2 class="title-skills">Some Benefits of Massage:</h2>
+  </div>
+  <div class="container-skill skills-center">
+    <ul >
+      <li class="spaceing" style="list-style: none;">Enhances Circulation</li>
+      <li class="spaceing" style="list-style: none;">Increase range of motion and flexibility</li>
+      <li class="spaceing" style="list-style: none;">Improves comfort and provides pain relief</li>
+      <li class="spaceing" style="list-style: none;">Stimulates muscle tone</li>
+      <li class="spaceing" style="list-style: none;">Decreases recovery time</li>
     </ul>
   </div>
 </section>
 
 <style>
+  .spaceing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
   .section-skill {
     position: relative;
     overflow: hidden;
@@ -51,14 +53,27 @@ import { getIconComponent } from "../../../icons/IconAll.astro";
     font-weight: 800;
     scroll-margin-top: 80px;
   }
+  .skills-center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 0;
+    color: #f6f6f9;
+    width: 100%;
+    font-weight: 500;
+    scroll-margin-top: 80px;
+    list-style: none;
+  }
 
   .li-skills {
     display: flex;
     list-style: none;
-    flex-direction: column;
+
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
   }
 
@@ -77,9 +92,10 @@ import { getIconComponent } from "../../../icons/IconAll.astro";
 
   .ul-skill {
     position: relative;
-    display: grid;
+    display: flex;
     width: 100%;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     padding: 40px 0;
     width: 100%;

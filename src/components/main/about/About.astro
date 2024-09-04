@@ -4,33 +4,41 @@
     <div class="container-text-about">
       <h2 class="title-about" id="about">About Us:</h2>
       <p class="aboutPara">
-        Hi, my name is Hailey Pullen and I have no idea what I want to do with
-        my life so I opted to massage horses and now people pay me stupid money
-        just touch their horses for 2h. Sometimes while I do it I plan my
-        suicide. Also, I love Wyatt. Thank you for coming to my TED talk. Don't
-        forget to disrespect your elders and drink alcohol. Unless you're Sean
+        We specialize in equine body work to enhance your horse's performance
+        and overall comfort. With the season just around the corner, it's the
+        perfect time to consider how your horse’s body is handling the demands
+        of their training. Our therapeutic sessions are designed to support and
+        maintain your horse’s well-being, helping them stay at their best both
+        in and out of the arena. Trust us to be a part of your horse’s journey
+        to success. 🐴💞
       </p>
     </div>
     <div class="container-svg-about">
       <div class="container-svg">
-        <lottie-player
-          src="https://assets8.lottiefiles.com/packages/lf20_sg18igu8.json"
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"></script>
+
+        <dotlottie-player
+          src="https://lottie.host/7f5e5e50-6565-4e3f-8062-74319eb00ae3/Sadjb0dEZr.json"
           background="transparent"
-          speed="1"
-          style="width: 380px; height: 380px; position:relative;"
+          speed="0.75"
+          style="width: 400px; height: 400px;"
           loop
-          autoplay></lottie-player>
+          autoplay></dotlottie-player>
       </div>
     </div>
   </div>
 </section>
 
 <script
-  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
-></script>
+  src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+  type="module"></script>
+
+
 
 <style>
-  .aboutPara{
+  .aboutPara {
     padding-top: 20px;
     text-align: center;
   }
@@ -62,6 +70,7 @@
     position: relative;
     width: 50%;
     display: flex;
+
     flex-direction: column;
     align-items: center;
   }
@@ -78,9 +87,9 @@
     scroll-margin-top: 80px;
   }
   .container-text-about p {
-    font-size: 17px;
+    font-size: 25px;
     color: #f6f6f9;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
   }
 
@@ -107,7 +116,7 @@
       width: 100%;
     }
     .container-svg {
-      justify-content: start;
+      justify-content: center;
       align-items: end;
       padding: 0;
     }
