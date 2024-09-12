@@ -7,6 +7,7 @@
   >
     <label for="First Name">First Name:</label><div class="fields">
       <input
+        id="first"
         type="text"
         placeholder="Enter your first name"
         name="First Name"
@@ -16,6 +17,7 @@
 
     <label for="First Name">Last Name:</label><div class="fields">
       <input
+        id="last"
         type="text"
         placeholder="Enter your last name"
         name="Last Name"
@@ -24,30 +26,47 @@
     </div>
     <label for="email">Email:</label><div class="fields">
       <input
+        id="email"
         type="email"
         placeholder="Enter your email address"
         name="email"
         required
       />
     </div>
-    <label for="tel">Phone Number:</label><div class="fields">
+
+    <label for="phone">Phone Number:</label><div class="fields">
       <input
+        id="phone"
         type="tel"
         placeholder="Enter your phone number"
         name="phone"
+        pattern="\d{3}[-]\d{3}[-]\d{4}"
+        autocomplete="tel"
+        aria-label="Phone number"
+        title="Phone number in the format 123-456-7890"
         required
+        class="form-control"
       />
     </div>
     <label for="email">Region:</label><div class="fields">
-      <input
-        type="text"
-        placeholder="Enter your Region"
-        name="region"
-        required
-      />
+      <select id="region" name="region" required>
+        <option value="Select a Region" disabled selected>Select a Region</option>
+        <option value="rigaud">Rigaud</option>
+        <option value="st-Lazare">St-Lazare</option>
+        <option value="Vaudreuil-Dorion">Vaudreuil-Dorion</option>
+        <option value="st-Marthe">St-Marthe</option>
+        <option value="hudson">Hudson</option>
+        <option value="Pointe-Fortune">Pointe-Fortune</option>
+        <option value="Les Coteaux">Les Coteaux</option>
+        <option value="Coteau-du-Lac">Coteau-du-Lac</option>
+        <option value="Notre-Dame-de-l'Île-Perrot">Notre-Dame-de-l'Île-Perrot</option>
+        <option value="Beauharnois">Beauharnois</option>
+        <option value="Kirkland">Kirkland</option>
+        <option value="Hawkesburry">Hawkesburry</option>
+      </select>
     </div>
     <label for="dayOfWeek">Date:</label><div class="fields">
-      <select id="Day" name="Date" required>
+      <select id="day" name="Date" required>
         <option value="Select a Day" disabled selected>Select a day</option>
         <option value="monday">Monday</option>
         <option value="tuesday">Tuesday</option>
@@ -56,8 +75,8 @@
         <option value="friday">Friday</option>
       </select>
     </div>
-    <label for="Time">Time:</label><div class="fields">
-      <select id="Time" name="Time" required>
+    <label for="time">Time:</label><div class="fields">
+      <select id="time" name="Time" required>
         <option value="Select a time" disabled selected>Select a time</option>
         <option value="8:00">8:00 AM</option>
         <option value="9:00">9:00 AM</option>
@@ -84,6 +103,33 @@
 </section>
 
 <style>
+  #time {
+    background-color: #313133;
+  }
+  #day {
+    background-color: #313133;
+    /* color: #f6f6f9; */
+  }
+  #region {
+    background-color: #313133;
+    /* color: #f6f6f9; */
+  }
+  #phone {
+    background-color: #313133;
+    /* color: #f6f6f9; */
+  }
+  #email {
+    background-color: #313133;
+    /* color: #f6f6f9; */
+  }
+  #last {
+    background-color: #313133;
+    /* color: #f6f6f9; */
+  }
+  #first {
+    background-color: #313133;
+    /* color: #f6f6f9; */
+  }
   .title-contact {
     display: flex;
     justify-content: center;
@@ -195,6 +241,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     padding-top: 20px;
   }
   label,
@@ -226,7 +273,7 @@
     width: 75%;
     padding: 12px 20px;
     margin: 8px 0;
-    color: whitesmoke !important;
+    color: #f6f6f9 ;
 
     border: 1px solid #ccc;
     border-radius: 4px;
