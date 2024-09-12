@@ -22,7 +22,7 @@ const { technologies, title, img, description, link } = Astro.props;
   <p class="description-project">
     {description}
   </p>
-  <p class="title-technologies">Technologys Used</p>
+  <!-- <p class="title-technologies">Technologys Used</p>
   <div class="container-technologies">
     {
       technologies.map(({ icon }) => {
@@ -30,9 +30,9 @@ const { technologies, title, img, description, link } = Astro.props;
         return <i>{IconComponent && <IconComponent />}</i>;
       })
     }
-  </div>
+  </div> -->
   <div class="container-link-project">
-    <a href={link} target="_blank">Explore</a>
+    <a href={link} target="_blank" href="https://hp-equine-performance-therapy-13y6osjgj-wyatt-howletts-projects.vercel.app/">Explore</a>
   </div>
 </li>
 
@@ -52,7 +52,8 @@ const { technologies, title, img, description, link } = Astro.props;
     z-index: 1;
     min-height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 
@@ -88,7 +89,7 @@ const { technologies, title, img, description, link } = Astro.props;
   .li-project img {
     position: relative;
     display: block;
-    height: 200px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: left top;
@@ -111,7 +112,7 @@ const { technologies, title, img, description, link } = Astro.props;
     padding: 5px 10px;
   }
   .description-project {
-    padding: 0 10px;
+    padding: 0 10px 10px 10px;
     color: #f6f6f990;
     font-size: 17px;
     font-weight: 400;
@@ -150,6 +151,7 @@ const { technologies, title, img, description, link } = Astro.props;
     background-color: #01be96;
     border-radius: 5px;
     color: #f6f6f9;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
   }
 </style>

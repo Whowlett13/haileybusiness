@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/vercel": "^7.8.0",
     "@splidejs/splide": "^4.1.4",
-    "astro": "^4.15.2"
+    "astro": "^4.15.2",
+    "use-basin": "^1.0.3"
   }
 }

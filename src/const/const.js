@@ -136,34 +136,34 @@ export const skills = [
 ];
 
 export const projects = [
+  // {
+  //   img: "../../../img/horseSpirit.jpg",
+  //   title: "Tasks Manager",
+  //   link: "https://www.wyatthowlett.ca",
+  //   description: `Lorem ipsum dolor sit amet`,
+  //   technologies: [
+  //     {
+  //       icon: IconKeys.typeScript,
+  //     },
+  //     {
+  //       icon: IconKeys.nextjs,
+  //     },
+  //     {
+  //       icon: IconKeys.tailwind,
+  //     },
+  //     {
+  //       icon: IconKeys.zustand,
+  //     },
+  //     {
+  //       icon: IconKeys.shadcn,
+  //     },
+  //   ],
+  // },
   {
-    img: "../../../img/horseSpirit.jpg",
-    title: "Tasks Manager",
-    link: "https://www.wyatthowlett.ca",
-    description: `Lorem ipsum dolor sit amet`,
-    technologies: [
-      {
-        icon: IconKeys.typeScript,
-      },
-      {
-        icon: IconKeys.nextjs,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
-      {
-        icon: IconKeys.zustand,
-      },
-      {
-        icon: IconKeys.shadcn,
-      },
-    ],
-  },
-  {
-    img: "../../../img/horseSpirit.jpg",
-    title: "Ecommerce Stripe",
-    link: "https://www.wyatthowlett.ca",
-    description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`,
+    img: "../../../img/Horse2.jpg",
+    title: "Equine Performance Therapy",
+    link: "https://hp-equine-performance-therapy-13y6osjgj-wyatt-howletts-projects.vercel.app/",
+    description: `We offer specialized equine body work to improve your horse’s performance and comfort.`,
     technologies: [
       {
         icon: IconKeys.typeScript,
@@ -182,22 +182,22 @@ export const projects = [
       },
     ],
   },
-  {
-    img: "../../../img/horseSpirit.jpg",
-    title: "me",
-    link: "https://www.wyatthowlett.ca",
-    description: `Lorem ipsum dolor sit amet`,
-    technologies: [
-      {
-        icon: IconKeys.typeScript,
-      },
-      {
-        icon: IconKeys.nextjs,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
-    ],
-  },
+  // {
+  //   img: "../../../img/Horse2.jpg",
+  //   title: "me",
+  //   link: "https://www.face",
+  //   description: `Lorem ipsum dolor sit amet`,
+  //   technologies: [
+  //     {
+  //       icon: IconKeys.typeScript,
+  //     },
+  //     {
+  //       icon: IconKeys.nextjs,
+  //     },
+  //     {
+  //       icon: IconKeys.tailwind,
+  //     },
+  //   ],
+  // },
   
 ];

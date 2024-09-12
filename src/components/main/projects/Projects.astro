@@ -6,7 +6,7 @@ import Project from "./Project.astro";
 <section class="section-projects">
   <div class="linear-grandient-1"></div>
   <div class="container-projects">
-    <h2 class="title-projects" id="projects">Clients:</h2>
+    <h2 class="title-projects" id="projects">Explore:</h2>
     <div>
       <ul class="ul-projects">
         {
@@ -43,6 +43,7 @@ import Project from "./Project.astro";
   }
 
   .container-projects {
+   
     position: relative;
     width: 90%;
     margin: 0 auto;
@@ -63,7 +64,9 @@ import Project from "./Project.astro";
 
   .ul-projects {
     position: relative;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     place-items: center;
     padding: 40px 0;
     width: 100%;
@@ -90,7 +93,7 @@ import Project from "./Project.astro";
   @media (min-width: 1200px) {
     .ul-projects {
       grid-template-columns: repeat(3, 1fr);
-      justify-content: space-between;
+      justify-content: center;
     }
   }
 </style>
