@@ -1,19 +1,19 @@
 export const studies = [
   {
-    title: "Lorem ipsum dolor sit amet",
-    corporation: "Lorem ipsum dolor sit amet",
-    date: "02/2019 – 12/2019",
+    title: "Certified Advanced Equine Sports Massage And Vertebral Realignment Therapist Equine Rehab",
+    corporation: "Equine Rehab",
+    date: "September 2022 - November 2022",
   },
   {
-    title: "Lorem ipsum dolor sit amet",
-    corporation: "Lorem ipsum dolor sit amet",
-    date: "04/2023 – 09/2023",
+    title: "Diploma in Equine Studies ",
+    corporation: "University of Guelph",
+    date: "January 2019 - April 2021",
   },
-  {
-    title: "Lorem ipsum dolor sit amet",
-    corporation: "Lorem ipsum dolor sit amet,",
-    date: "04/2023 – 04/2023",
-  },
+  // {
+  //   title: "Lorem ipsum dolor sit amet",
+  //   corporation: "Lorem ipsum dolor sit amet,",
+  //   date: "04/2023 – 04/2023",
+  // },
   
 ];
 

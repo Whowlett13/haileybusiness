@@ -1,12 +1,14 @@
 <header class="header">
-  <h1 class="name">Hp Performance Therapy</h1>
+  <a href="#contact" class="name-link">
+    <h1 class="name">Hp Performance Therapy</h1>
+  </a>
+  
   <nav class="nav">
     <ul class="ul-nav">
       <a href="#about">
         <li class="li-nav">About Us</li>
       </a>
 
-      
       <a href="#skills">
         <li class="li-nav">Skills</li>
       </a>
@@ -58,7 +60,18 @@
 </header>
 
 <style is:global>
-  .headerP{
+  .name-link {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.name {
+  /* Add any additional styling needed for the h1 text */
+  font-size: 36px; /* Example font size */
+  color: #f6f6f9; /* Example color, ensure this matches your design */
+}
+
+  .headerP {
     padding-top: 20px;
   }
   .header {
@@ -79,6 +92,7 @@
     display: inline-block;
     position: relative;
     z-index: 20;
+    cursor: pointer;
   }
   .nav {
     position: relative;
@@ -197,11 +211,10 @@
       text-align: center;
       width: 100%;
       margin: 0;
-      
     }
     .li-nav:hover {
       background-color: #01be96;
-      color : #000
+      color: #000;
     }
     .li-nav:hover::before {
       content: "";

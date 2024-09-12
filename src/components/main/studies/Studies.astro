@@ -3,17 +3,17 @@ import { studies } from "../../../const/const";
 ---
 
 <section class="section_studies">
-  <div class="linear-grandient-1"></div>
+  <div class="linear-grandient-1 "></div>
   <div class="content_studies">
     <h3 class="title-studies" id="education">Education:</h3>
-    <ul class="ul-studies">
+    <ul class="ul-studies ">
       {
         studies.map(({ date, title, corporation }) => (
-          <li class="li-studies">
-            <span class="circle" />
+          <li class="li-studies ">
+            <span class="circle animate-bounce" />
             <div>
               <h3>{title}</h3>
-              <p>{corporation}</p>
+              <h4>{corporation}</h4>
               <span>{date}</span>
             </div>
           </li>
@@ -33,70 +33,91 @@ import { studies } from "../../../const/const";
     justify-content: center;
     align-items: center;
   }
+
   .linear-grandient-1 {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    /* background: radial-gradient(at left center, rgba(1, 190, 150 , 0.5), transparent , transparent); */
     background: linear-gradient(to top, rgba(1, 190, 150, 0.5), #000);
-    background: ;
     z-index: 0;
   }
+
   .content_studies {
     position: relative;
     z-index: 1;
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 1355px;
+    width: 100%;
+    max-width: 1355px; /* Maximum width for content */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
   }
+
   .title-studies {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 27px;
     color: #f6f6f9;
-    text-align: left;
-    width: 100%;
-    font-weight: 800;
+    text-align: center;
+    font-weight: 400;
+    margin: 20px 0;
     scroll-margin-top: 80px;
-    padding: 20px 0;
   }
+
   .ul-studies {
-    padding: 30px 10px;
+    padding: 30px 0;
+    margin: 0; /* Remove default margin */
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
   }
+
   .li-studies {
-    padding: 0px 20px;
+    padding: 0 20px;
     color: #f6f6f9;
     border-left: 1px solid #f6f6f9;
-    list-style: none;
     position: relative;
-    padding-bottom: 50px;
+    margin-bottom: 50px; /* Space between list items */
+    width: 100%; /* Ensure list item takes full width of the container */
+    max-width: 600px; /* Ensure list item does not exceed max width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
   }
+
   .circle {
     position: absolute;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    left: -5px;
+    left: -6px; /* Adjusted to align with border */
     top: 5px;
     background-color: #f6f6f9;
   }
+
   .li-studies h3 {
     padding-bottom: 5px;
     font-weight: 200;
   }
-  .li-studies p {
+
+  .li-studies h4 {
     padding: 5px 0;
   }
+
   .li-studies span {
     font-size: 13px;
   }
+  @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
 </style>

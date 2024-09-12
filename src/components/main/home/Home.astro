@@ -9,17 +9,20 @@ import photoperfil from "../../../../public/img/Horse2.jpg";
   <dir class="container-persentation">
     <div class="container-text">
       <!-- <h2 class="text-hello">Hola <strong>soy</strong></h2> -->
-      <h2 class="text-name">Hailey Pullen</h2>
+       <a href="#contact" class="p-profession-link" >
+      <h2 class="text-name" >Hailey Pullen</h2></a>
       <div class="container-profession">
         <div>
           <span class="">&nbsp;</span>
-          <span class="p-profession">Equine Body Worker</span>
+          <a href="#contact"  class="p-profession-link" >
+          <span class="p-profession" >Equine Body Worker</span>
+        </a>
           <span class="">&nbsp;</span>
         </div>
         
       </div>
-      <p class="p-presentation">
-        orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      
+      
       <div class="container-curriculum">
         <a  target="_blank" class="a-action" href="#contact"
           >Contact Us</a
@@ -28,22 +31,22 @@ import photoperfil from "../../../../public/img/Horse2.jpg";
          
           class="a-curriculum"
           target="_blank"
-          href="#skills">Services</a
+          href="#skills">Service Info</a
         >
       </div>
       <div class="container-social">
         <p class="">Socials</p>
-        <a href="https://github.com/whowlett13" target="_blank">
+        <a href="https://www.facebook.com/hpequineperformancetherapy/" target="_blank">
           <li class="li-social">
-            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-facebook"></i>
           </li>
         </a>
         <a
-          href="https://www.linkedin.com/in/wyatt-howlett-399849254/"
+          href="https://www.instagram.com/hpequineperformancetherapy/"
           target="_blank"
         >
           <li class="li-social">
-            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
           </li>
         </a>
       </div>
@@ -76,6 +79,12 @@ import photoperfil from "../../../../public/img/Horse2.jpg";
 </script>
 
 <style>
+  .p-profession-link {
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit color from parent element */
+}
+
+
   .content-presentation {
     display:flex;
     justify-content: center;
@@ -143,6 +152,7 @@ import photoperfil from "../../../../public/img/Horse2.jpg";
     font-weight: 800;
     letter-spacing: 1px;
     margin-top: 30px;
+    cursor: pointer;
   }
   .container-profession {
     display:flex;
@@ -158,6 +168,8 @@ import photoperfil from "../../../../public/img/Horse2.jpg";
     cursor: pointer;
     
     text-transform: capitalize;
+    font-weight: bold;
+    color: #f6f6f9; /* Ensure this matches your design */
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   }
 
@@ -280,6 +292,7 @@ import photoperfil from "../../../../public/img/Horse2.jpg";
     width: 50%;
     display: flex;
     justify-content: center;
+    
   }
 
   .photo-perfil {
@@ -297,6 +310,7 @@ import photoperfil from "../../../../public/img/Horse2.jpg";
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
     /* border-radius: 64% 36% 29% 71% / 59% 79% 21% 41%; */
   }
 
