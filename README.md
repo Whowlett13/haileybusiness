@@ -1,14 +1,9 @@
-# Astro Starter Kit: Minimal
+# Equine Performance Therapy
 
-```
-npm create astro@latest -- --template minimal
-```
+We specialize in equine body work to enhance your horse's performance and overall comfort. With the season just around the corner, it's the perfect time to consider how your horse’s body is handling the demands of their training. Our therapeutic sessions are designed to support and maintain your horse’s well-being, helping them stay at their best both in and out of the arena. Trust us to be a part of your horse’s journey to success. 🐴💞
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
 
 ## 🚀 Project Structure
 
@@ -42,6 +37,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
