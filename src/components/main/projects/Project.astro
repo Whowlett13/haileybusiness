@@ -40,7 +40,7 @@ const { technologies, title, img, description, link } = Astro.props;
   .li-project {
     position: relative;
     list-style: none;
-    border: 1px solid #3d3e4f;
+    border: 1px solid #e0e0e0;
     overflow: hidden;
     max-width: 380px;
     min-width: 300px;
@@ -48,13 +48,14 @@ const { technologies, title, img, description, link } = Astro.props;
     border-radius: 2px;
     transition: transform, box-shadow, 0.3s;
     border-radius: 7px;
-    background-color: #25242d;
+    background-color: #ffffff;
     z-index: 1;
     min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .li-project:nth-child() {
@@ -97,7 +98,7 @@ const { technologies, title, img, description, link } = Astro.props;
     pointer-events: none;
   }
   .title-project {
-    color: #f6f6f9;
+    color: #111111;
     padding: 10px 10px;
     font-size: 25px;
     font-weight: 700;
@@ -107,13 +108,13 @@ const { technologies, title, img, description, link } = Astro.props;
   }
 
   .title-technologies {
-    color: #f6f6f9;
+    color: #111111;
     font-size: 20px;
     padding: 5px 10px;
   }
   .description-project {
     padding: 0 10px 10px 10px;
-    color: #f6f6f990;
+    color: #333333;
     font-size: 17px;
     font-weight: 400;
     display: -webkit-box;
@@ -150,7 +151,7 @@ const { technologies, title, img, description, link } = Astro.props;
     padding: 10px 10px;
     background-color: #01be96;
     border-radius: 5px;
-    color: #f6f6f9;
+    color: #ffffff;
     display: flex;
     justify-content: center;
   }
