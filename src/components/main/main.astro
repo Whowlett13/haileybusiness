@@ -9,11 +9,146 @@ import Contact from "./contact/Contact.astro";
 
 <main>
   <div class="container_p">
-    <Home />
-    <Projects />
-    <Skills />
-    <Studies />
-    <About />
-    <Contact />
+    <div class="section-wrapper">
+      <Home />
+    </div>
+    <div class="section-wrapper">
+      <Projects />
+    </div>
+    <div class="section-wrapper">
+      <Skills />
+    </div>
+    <div class="section-wrapper">
+      <Studies />
+    </div>
+    <div class="section-wrapper">
+      <About />
+    </div>
+    <div class="section-wrapper">
+      <Contact />
+    </div>
   </div>
 </main>
+
+<style>
+  main {
+    scroll-behavior: smooth;
+    padding-top: 150px;
+  }
+
+  .container_p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    perspective: 1000px;
+  }
+
+  .section-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: blur(0.5px);
+    will-change: transform, opacity;
+  }
+
+  .section-wrapper.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+
+  /* Desktop animations */
+  @media (min-width: 1025px) {
+    .section-wrapper {
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .section-wrapper:nth-child(1) { transition-delay: 0.1s; }
+    .section-wrapper:nth-child(2) { transition-delay: 0.15s; }
+    .section-wrapper:nth-child(3) { transition-delay: 0.2s; }
+    .section-wrapper:nth-child(4) { transition-delay: 0.25s; }
+    .section-wrapper:nth-child(5) { transition-delay: 0.3s; }
+    .section-wrapper:nth-child(6) { transition-delay: 0.35s; }
+  }
+
+  /* Tablet optimizations */
+  @media (min-width: 721px) and (max-width: 1024px) {
+    main {
+      padding-top: 120px;
+    }
+    .section-wrapper {
+      transform: translateY(25px);
+      transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .section-wrapper:nth-child(1) { transition-delay: 0.08s; }
+    .section-wrapper:nth-child(2) { transition-delay: 0.12s; }
+    .section-wrapper:nth-child(3) { transition-delay: 0.16s; }
+    .section-wrapper:nth-child(4) { transition-delay: 0.2s; }
+    .section-wrapper:nth-child(5) { transition-delay: 0.24s; }
+    .section-wrapper:nth-child(6) { transition-delay: 0.28s; }
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 720px) {
+    main {
+      padding-top: 100px;
+    }
+    .section-wrapper {
+      transform: translateY(15px);
+      filter: none;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .section-wrapper:nth-child(1) { transition-delay: 0.05s; }
+    .section-wrapper:nth-child(2) { transition-delay: 0.08s; }
+    .section-wrapper:nth-child(3) { transition-delay: 0.11s; }
+    .section-wrapper:nth-child(4) { transition-delay: 0.14s; }
+    .section-wrapper:nth-child(5) { transition-delay: 0.17s; }
+    .section-wrapper:nth-child(6) { transition-delay: 0.2s; }
+  }
+</style>
+
+<script>
+  const observerOptions = {
+    root: null,
+    rootMargin: '10px',
+    threshold: [0, 0.1, 0.2, 0.3]
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        requestAnimationFrame(() => {
+          entry.target.classList.add('fade-in');
+        });
+      }
+    });
+  }, observerOptions);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.section-wrapper');
+    sections.forEach(section => observer.observe(section));
+
+    // Add smooth scroll behavior
+    const smoothScroll = (e) => {
+      e.preventDefault();
+      const targetId = e.currentTarget.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        const headerOffset = window.innerWidth <= 720 ? 100 : 
+                           window.innerWidth <= 1024 ? 120 : 150;
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', smoothScroll);
+    });
+  });
+</script>
